@@ -62,3 +62,20 @@ else:
 
 #---------------------------------------------------------------
 #QUESTÃO 4
+'''
+Faça um programa que peça o primeiro nome de usuário. Se o nome tiver 4 letras
+ou menos escreva "Nome curto", entre 5 e 6 escreva "Nome normal" e maior que
+6 escreva "Nome muito grande".
+'''
+
+nome = input("Digite um nome: ")
+tamanho = len(nome)
+
+if tamanho <= 4:
+    print(f"O nome '{nome}' é muito curto!")
+
+elif tamanho >= 5 and tamanho <= 6:
+    print(f"O nome '{nome}' é um nome normal!")
+
+else:
+    print(f"O nome '{nome}' é um nome muito grande!")
