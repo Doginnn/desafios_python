@@ -79,3 +79,41 @@ elif tamanho >= 5 and tamanho <= 6:
 
 else:
     print(f"O nome '{nome}' é um nome muito grande!")
+
+#---------------------------------------------------------------
+#QUESTÃO 5
+'''
+Calculadora de operações básicas.
+'''
+
+while True:
+    print()
+    num_1 = input('Digite um número: ')
+    num_2 = input('Digite um número: ')
+    operador = input('Digite um operador: ')
+    sair = input('Deseja sair? [y]Yes ou [n]No: ')
+
+    if sair == 'y':
+        print('Obrigado por usar a calculadora!')
+        break
+
+    if not num_1.isnumeric() or not num_2.isnumeric():
+        print('Por favor digite apenas números!')
+        continue
+    
+    num_1 = int(num_1)
+    num_2 = int(num_2)
+
+    if operador == '+':
+        print(num_1 + num_2)
+
+    elif operador == '-':
+        print(num_1 - num_2)
+    
+    elif operador == '/':
+        print(num_1 / num_2)
+
+    elif operador == '*':
+        print(num_1 * num_2)
+
+print('Até breve!')
