@@ -117,3 +117,35 @@ while True:
         print(num_1 * num_2)
 
 print('Até breve!')
+
+#---------------------------------------------------------------
+#QUESTÃO 6
+'''
+Iterando strings com While.
+O programa pega uma frase pré definida e coloca dentro de outra string vazia
+com o comando input dado pelo usuário com a letra que ficará maiúscula.
+'''
+
+frase = 'o rato roeu a roupa do rei de roma'
+tamanho = len(frase)
+count = 0
+nova_frase = ''
+
+print(frase)
+print()
+letra_maiuscula = input('Digite a letra nessa frase que ficará "MAIÚSCULA": ')
+
+while count < tamanho:
+    letra = frase[count]
+
+    if letra == letra_maiuscula:
+        nova_frase += letra_maiuscula.upper()
+    
+    else:
+        nova_frase += letra
+    count += 1
+
+print(nova_frase)
+
+#---------------------------------------------------------------
+#QUESTÃO 7
