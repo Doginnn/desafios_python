@@ -169,7 +169,7 @@ n1, n2, *_ = lista  # O "*_" na variável indica que vou imprimir apenas os dois
 print(n1, n2)
 
 #---------------------------------------------------------------
-#QUESTÃO 
+#QUESTÃO 9
 '''
 Operador ternário (usuario_logado)
 '''
@@ -188,4 +188,16 @@ else:
     maior_de_idade = (idade >= 18)
     msg = 'É de maior, pode acessar!' if (maior_de_idade) else 'Você não é maior de idade!'
     print(msg)
-    
+
+#---------------------------------------------------------------
+#QUESTÃO 10
+'''
+crie as estruturas for retornando de 0 até 8 e while retornando de 10 até 2
+'''
+diminuindo = [10,9,8,7,6,5,4,3,2]
+
+for contador, numeros in enumerate(diminuindo):
+    print(contador, numeros)
+
+# for x, y in enumerate(range(10, 1, -1)):
+#     print(x, y)
