@@ -155,4 +155,15 @@ Função enumerate em uma lista.
 lista = ['Diógenes', 'Emmanuel', 'Dantas', 'Soares']
 
 for indice, nome in enumerate(lista):
-    print(lista)
+    print(indice, nome)
+
+#---------------------------------------------------------------
+#QUESTÃO 8
+'''
+Função desempacotamento em uma lista.
+'''
+lista = ['Diógenes', 'Emmanuel', 'Dantas', 'Soares']
+
+n1, n2, *_ = lista  # O "*_" na variável indica que vou imprimir apenas os dois primeiros índices na lista
+
+print(n1, n2)
