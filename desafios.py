@@ -149,3 +149,10 @@ print(nova_frase)
 
 #---------------------------------------------------------------
 #QUESTÃO 7
+'''
+Função enumerate em uma lista.
+'''
+lista = ['Diógenes', 'Emmanuel', 'Dantas', 'Soares']
+
+for indice, nome in enumerate(lista):
+    print(lista)
