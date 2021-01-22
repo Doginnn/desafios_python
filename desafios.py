@@ -167,3 +167,25 @@ lista = ['Diógenes', 'Emmanuel', 'Dantas', 'Soares']
 n1, n2, *_ = lista  # O "*_" na variável indica que vou imprimir apenas os dois primeiros índices na lista
 
 print(n1, n2)
+
+#---------------------------------------------------------------
+#QUESTÃO 
+'''
+Operador ternário (usuario_logado)
+'''
+usuario_logado = True
+msg = 'Você está logado!' if (usuario_logado) else 'Você precisa logar no Sistema!'
+    print(msg)
+#---------------------------------------------------------------
+'''
+Operador ternário (maior_de_idade)
+'''
+idade = input('Qual a sua idade? ')
+if not idade.isnumeric():           #Condição verifica se está digitando apenas números inteiros!
+    print('Digite apenas números inteiros!')
+else:
+    idade = int(idade)
+    maior_de_idade = (idade >= 18)
+    msg = 'É de maior, pode acessar!' if (maior_de_idade) else 'Você não é maior de idade!'
+    print(msg)
+    
