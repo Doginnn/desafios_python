@@ -242,3 +242,31 @@ while True:
 
 #---------------------------------------------------------------
 #QUESTÃO 12
+'''
+Programa pra gerar CPF aleatórios e válidos.
+'''
+from random import randint
+
+numero = str(randint(100000000, 999999999))     #Gera um CPF aleatório e válido entre esses 2 números
+
+novo_cpf = numero                   #Elimina os 2 últimos números do CFP
+reverso = 10                        #Contador reverso
+total = 0
+
+for index in range(19):
+    if index > 8:               #Primeiro índice vai de 0 até 9
+        index -= 9              #Referente aos 9 primeiros números do CPF
+
+    total += int(novo_cpf[index]) * reverso     #Valor total da multiplicação
+    reverso -= 1                #Decrementa o contador reverso
+
+    if reverso < 2:
+        reverso = 11
+        digito = 11 - (total % 11)
+
+        if digito > 9:          #Se o digito for maior que 9 ele zera
+            digito = 0
+        total = 0
+        novo_cpf += str(digito) #Concatena o digito gerado no novo CPF
+
+print(f'Esse é seu novo CPF: {novo_cpf}')
