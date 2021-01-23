@@ -201,3 +201,44 @@ for contador, numeros in enumerate(diminuindo):
 
 # for x, y in enumerate(range(10, 1, -1)):
 #     print(x, y)
+
+#---------------------------------------------------------------
+#QUESTÃO 11
+'''
+Programa pra validar seu CPF.
+'''
+while True:
+    cpf = input('Digite um CPF: ')
+    novo_cpf = cpf[:-2]                 #Elimina os 2 últimos números do CFP
+    reverso = 10                        #Contador reverso
+    total = 0
+    if cpf.isdigit():                   #Valida para ser digitado apenas números
+        cpf = int(cpf)
+
+        for index in range(19):
+            if index > 8:               #Primeiro índice vai de 0 até 9
+                index -= 9              #Referente aos 9 primeiros números do CPF
+
+            total += int(novo_cpf[index]) * reverso     #Valor total da multiplicação
+            reverso -= 1                #Decrementa o contador reverso
+
+            if reverso < 2:
+                reverso = 11
+                digito = 11 - (total % 11)
+
+                if digito > 9:          #Se o digito for maior que 9 ele zera
+                    digito = 0
+                total = 0
+                novo_cpf += str(digito) #Concatena o digito gerado no novo CPF
+
+
+        if cpf == novo_cpf:
+            print(f'O CPF {cpf} é válido!')
+        else:
+            print(f'O CPF {cpf} é válido!')
+
+    else:
+        print('Por favor digite APENAS NÚMEROS INTEIROS!')   #Retorno da validação se não for apenas números
+
+#---------------------------------------------------------------
+#QUESTÃO 12
