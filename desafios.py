@@ -241,7 +241,9 @@ while True:
 
 # ---------------------------------------------------------------
 # QUESTÃO 12
+'''
 # Programa para gerar CPFs Válidos.
+'''
 from random import randint
 
 numero = str(randint(100000000, 999999999))  # Gera um CPF aleatório e válido entre esses 2 números
