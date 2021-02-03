@@ -295,8 +295,12 @@ calculadora()
 # 3 - Crie uma função que recebe 2 números. O primeiro é um valor e o segundo um percentual(ex: 10%).
 # Retorne(return) o valor do primeiro número somado com o percentual
 
-def percentual(n1, n2):
-    print()
+def percentual():
+    valor = int(input('Digite um valor: '))
+    porcento = int(input('Deseja adicionar quantos %: '))
+    soma = valor + (valor * porcento / 100)
+    print(f'O valor {valor} + {porcento}% é igual a: {soma}')
+    return soma
 percentual()
 
 # 4 - Fizz Buzz - Se o parâmetro da função for divisível por 2, retorne Fizz, se for divisível por 5, retorne Buzz.
