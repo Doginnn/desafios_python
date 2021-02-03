@@ -276,10 +276,28 @@ Definindo Funções em Python(def)
 '''
 # 1 - Crie uma função que exibe uma saudação com os parametros: saudacao e nome.
 
+def welcome():
+    saudacao = input('Digite uma saudação: ')
+    nome = input('Digite seu nome: ')
+    print(saudacao, nome)
+welcome()
+
 # 2 - Crie uma função que recebe 3 números e exibe a soma entre eles.
+
+def calculadora():
+    n1 = int(input('Digite um número: '))
+    n2 = int(input('Digite um número: '))
+    n3 = int(input('Digite um número: '))
+    soma = n1+n2+n3
+    print(f'A soma de {n1} + {n2} + {n3} é: {soma}')
+calculadora()
 
 # 3 - Crie uma função que recebe 2 números. O primeiro é um valor e o segundo um percentual(ex: 10%).
 # Retorne(return) o valor do primeiro número somado com o percentual
+
+def percentual(n1, n2):
+    print()
+percentual()
 
 # 4 - Fizz Buzz - Se o parâmetro da função for divisível por 2, retorne Fizz, se for divisível por 5, retorne Buzz.
 # Se o parâmetro da função for divisível por 5 e 3, retorne FizzBuzz, caso contrário retorne o número enviado.
