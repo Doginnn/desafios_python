@@ -305,3 +305,19 @@ percentual()
 
 # 4 - Fizz Buzz - Se o parâmetro da função for divisível por 2, retorne Fizz, se for divisível por 5, retorne Buzz.
 # Se o parâmetro da função for divisível por 5 e 3, retorne FizzBuzz, caso contrário retorne o número enviado.
+
+def comparador_fizzbuzz():
+    numero = int(input('Digite um número: '))
+    if numero % 3 == 0 and numero % 5 == 0:
+        print('FizzBuzz')
+        return comparador_fizzbuzz()
+    if numero % 2 == 0:
+        print('Fizz')
+        return comparador_fizzbuzz()
+    if numero % 5 == 0:
+        print('Buzz')
+        return comparador_fizzbuzz()
+    else:
+        print(f"{numero} Não atende nenhum resultado, Tente outro número!")
+    return comparador_fizzbuzz()
+comparador_fizzbuzz()
