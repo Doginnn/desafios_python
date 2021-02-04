@@ -269,13 +269,13 @@ for index in range(19):
         novo_cpf += str(digito)  # Concatena o digito gerado no novo CPF
 
 print(f'Esse é seu novo CPF: {novo_cpf}')
+
 # ---------------------------------------------------------------
 # QUESTÃO 13
 '''
 Definindo Funções em Python(def)
 '''
 # 1 - Crie uma função que exibe uma saudação com os parametros: saudacao e nome.
-
 def welcome():
     saudacao = input('Digite uma saudação: ')
     nome = input('Digite seu nome: ')
@@ -283,7 +283,6 @@ def welcome():
 welcome()
 
 # 2 - Crie uma função que recebe 3 números e exibe a soma entre eles.
-
 def calculadora():
     n1 = int(input('Digite um número: '))
     n2 = int(input('Digite um número: '))
@@ -294,7 +293,6 @@ calculadora()
 
 # 3 - Crie uma função que recebe 2 números. O primeiro é um valor e o segundo um percentual(ex: 10%).
 # Retorne(return) o valor do primeiro número somado com o percentual
-
 def percentual():
     valor = int(input('Digite um valor: '))
     porcento = int(input('Deseja adicionar quantos %: '))
@@ -305,19 +303,19 @@ percentual()
 
 # 4 - Fizz Buzz - Se o parâmetro da função for divisível por 2, retorne Fizz, se for divisível por 5, retorne Buzz.
 # Se o parâmetro da função for divisível por 5 e 3, retorne FizzBuzz, caso contrário retorne o número enviado.
-
-def comparador_fizzbuzz():
-    numero = int(input('Digite um número: '))
-    if numero % 3 == 0 and numero % 5 == 0:
-        print('FizzBuzz')
-        return comparador_fizzbuzz()
-    if numero % 2 == 0:
-        print('Fizz')
-        return comparador_fizzbuzz()
-    if numero % 5 == 0:
-        print('Buzz')
-        return comparador_fizzbuzz()
+def comparador_fizzbuzz(n):
+    if n % 3 == 0 and n % 5 == 0:
+        return 'FizzBuzz'
+    if n % 3 == 0:
+        return 'Fizz'
+    if n % 5 == 0:
+        return 'Buzz'
     else:
-        print(f"{numero} Não atende nenhum resultado, Tente outro número!")
-    return comparador_fizzbuzz()
-comparador_fizzbuzz()
+        return f'{n} Não atende nenhum resultado, Tente outro número!'
+print(comparador_fizzbuzz(int(input('Digite um número: '))))
+
+# ---------------------------------------------------------------
+# QUESTÃO 14
+'''
+Próxima Questão
+'''
