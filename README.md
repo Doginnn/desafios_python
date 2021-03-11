@@ -12,4 +12,4 @@ Repositório destinado para desafios de aprendizagem Python.
 
 ## Ajuda
 
-Para relatar bugs, fazer perguntas ou até mesmo quiser somar com algum código utilize o [Issues](https://github.com/Doginnn/desfios_python/issues) ou via email diogenesemmanuel@gmail.com
+Para relatar bugs, fazer perguntas ou até mesmo quiser somar com algum código utilize o [Issues](https://github.com/Doginnn/desafios_python/issues) ou via email diogenesemmanuel@gmail.com
