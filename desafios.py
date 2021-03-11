@@ -421,7 +421,17 @@ for lista_de_inteiros in lista_de_listas_de_inteiros:
 # ---------------------------------------------------------------
 # QUESTÃO 16
 """
+LIST COMPREHENSIONS
 """
+string = '012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789'
+n =10
+lista = [string[i:i + n] for i in range(0, len(string), n)]
+retorno_final = '.'.join(lista)
+
+print()
+print(lista)
+print()
+print(retorno_final)
 
 
 # ---------------------------------------------------------------
