@@ -436,8 +436,23 @@ print(retorno_final)
 # ---------------------------------------------------------------
 # QUESTÃO 17
 """
+Somando produtos de um carrinho 'com' e 'sem' List Comprehensions.
 """
+carrinho = []
+carrinho.append(('Produto 1', 29.99))
+carrinho.append(('Produto 2', 20))
+carrinho.append(('Produto 3', 50))
+carrinho.append(('Produto 3', '50'))
 
+# Total do jeito tradicional
+total = []
+for produto in carrinho:
+    total.append(produto[1])
+print(sum(total))
+
+# Total com List Comprehension
+total2 = sum([float(y) for x, y in carrinho])
+print(total2)
 
 # ---------------------------------------------------------------
 # QUESTÃO 18
