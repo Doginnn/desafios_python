@@ -457,8 +457,19 @@ print(total2)
 # ---------------------------------------------------------------
 # QUESTÃO 18
 """
+Zip - Unindo iteráveis
+Zip_longest - Itertools
 """
+from itertools import count
 
+indice = count()
+cidades = ['Currais Novos', 'João Pessoa', 'Recife', 'Natal', 'São Paulo', 'Rio de Janeiro']
+estados = ['RN', 'PB', 'PE']
+
+cidades_estados = zip(indice, estados, cidades)
+
+for indice, estados, cidades in cidades_estados:
+    print(indice, estados, cidades)
 
 # ---------------------------------------------------------------
 # QUESTÃO 19
