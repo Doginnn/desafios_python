@@ -494,4 +494,61 @@ print(lista_soma)
 # ---------------------------------------------------------------
 # QUESTÃO 20
 """
+Group_by - Agrupando valores
+"""
+from itertools import groupby, tee
+
+alunos = [
+    {'nome': 'Diógenes', 'nota': 'C'},
+    {'nome': 'Mariana', 'nota': 'A'},
+    {'nome': 'Gracinha', 'nota': 'B'},
+    {'nome': 'Diêgo', 'nota': 'B'},
+    {'nome': 'Rian Davi', 'nota': 'C'},
+    {'nome': 'Enzo', 'nota': 'A'},
+]
+
+ordena = lambda item: item['nota']
+alunos.sort(key=ordena)
+alunos_agrupados = groupby(alunos, ordena)
+
+for agrupamento, valores_agrupados in alunos_agrupados:
+    va1, va2 = tee(valores_agrupados)
+
+    print(f'Agrupamento: {agrupamento}')
+
+    for aluno in va1:
+        print(f'\t{aluno}')
+
+    quantidade = len(list(va2))
+    print(f'\t{quantidade} alunos tiraram a nota {agrupamento}')
+    print()
+
+# ---------------------------------------------------------------
+# QUESTÃO 21
+"""
+
+"""
+
+# ---------------------------------------------------------------
+# QUESTÃO 22
+"""
+
+"""
+
+# ---------------------------------------------------------------
+# QUESTÃO 23
+"""
+
+"""
+
+# ---------------------------------------------------------------
+# QUESTÃO 24
+"""
+
+"""
+
+# ---------------------------------------------------------------
+# QUESTÃO 25
+"""
+
 """
